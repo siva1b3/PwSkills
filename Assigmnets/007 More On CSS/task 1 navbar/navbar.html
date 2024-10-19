@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <style>
+      /* Basic Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Navigation Bar Styles */
+      nav {
+        background-color: blue; /* Blue background */
+        padding: 10px 20px; /* Space around the nav bar */
+      }
+
+      /* Navigation Links */
+      nav ul {
+        list-style: none; /* Remove bullet points */
+        display: flex; /* Display items in a row */
+        justify-content: flex-start; /* Align items to the left */
+      }
+
+      nav ul li {
+        margin-right: 20px; /* Space between each nav item */
+      }
+
+      nav ul li:last-child {
+        margin-right: 0; /* Remove right margin for the last item */
+      }
+
+      nav ul li a {
+        text-decoration: none; /* Remove underline */
+        color: white; /* White text color */
+        font-size: 18px; /* Font size */
+        padding: 8px 16px; /* Padding inside the links */
+        transition: color 0.3s ease; /* Smooth transition for hover effect */
+      }
+
+      nav ul li a:hover {
+        color: yellow; /* Change text color to yellow on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About US</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
