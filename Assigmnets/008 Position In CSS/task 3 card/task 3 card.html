@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float Example</title>
+    <style>
+      .container {
+        overflow: hidden; /* Clear floats */
+        width: 90%; /* Container width */
+        margin: 2% auto; /* Center the container */
+        border: 2px solid black;
+        padding: 2%;
+        box-sizing: border-box;
+        background-color: lightgoldenrodyellow;
+      }
+      .wrapper {
+        height: 400px;
+        margin: 0%;
+        display: inline-block;
+        max-width: 600px;
+      }
+      .float-right {
+        float: right;
+        margin-left: 10px; /* Space between text and image */
+      }
+      .text {
+        vertical-align: middle; /* Align text vertically */
+      }
+      img {
+        height: 400px;
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <h1>The Earth!!</h1>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, ipsam
+          odio. Architecto vitae unde earum aut laudantium, veritatis rem
+          doloremque iusto quam pariatur nobis sunt fuga, magnam, natus mollitia
+          dicta officiis nostrum quas! Ipsam perferendis quos odio quod ducimus.
+          Voluptatem amet delectus voluptate perferendis dicta odio impedit
+          possimus vel, similique asperiorem eveniet ratione quisquam enim,
+          ducimus eos necessitatibus? Quidem neque ullam repellat quos
+          laudantium? Eligendi dolores tenetur itaque quae! Nam fugiat in
+          ratione obcaecati. Assumenda eaque porro molestiae tenetur saepe.
+          Labore asperiores dolorum voluptate incidunt officia vitae repellendus
+          laudantium, error quasi laboriosam aperiam officiis in perferendis
+          optio inventore reiciendis! Officia enim corrupti ab, aliquam velit
+          eligendi inventore voluptatem eum doloremque ratione beatae quasi
+          dolorem voluptatibus laudantium dolore pariatur iure eveniet obcaecati
+          excepturi quod.
+        </p>
+      </div>
+      <img
+        src="https://media.istockphoto.com/id/1457206081/photo/earth-planet-at-night-into-the-dark-cities-light-earth-in-deep-space-with-stars-planet-sphere.webp?a=1&b=1&s=612x612&w=0&k=20&c=dIsx0JCfB4GouoWqg6WU2e3IFeU15jZtGqZLQjEAb8A="
+        class="float-right"
+        alt="Placeholder Image"
+      />
+    </div>
+  </body>
+</html>

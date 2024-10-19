@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Index Example</title>
+    <style>
+      /* Base style for the boxes */
+      .box {
+        width: 100px; /* Set the width of each box */
+        height: 100px; /* Set the height of each box */
+        position: absolute; /* Enable positioning to allow z-index to work */
+      }
+      /* Style for the first box (red) */
+      .box1 {
+        background-color: red; /* Set background color to red */
+        top: 50px; /* Position 50 pixels from the top */
+        left: 50px; /* Position 50 pixels from the left */
+        z-index: 1; /* Set z-index to 1 (lower stacking order) */
+      }
+      /* Style for the second box (blue) */
+      .box2 {
+        background-color: blue; /* Set background color to blue */
+        top: 70px; /* Position 70 pixels from the top (overlapping box1) */
+        left: 70px; /* Position 70 pixels from the left */
+        z-index: 2; /* Set z-index to 2 (higher stacking order) */
+      }
+      /* Style for the third box (green) */
+      .box3 {
+        background-color: green; /* Set background color to green */
+        top: 90px; /* Position 90 pixels from the top (overlapping both box1 and box2) */
+        left: 90px; /* Position 90 pixels from the left */
+        z-index: 0; /* Set z-index to 0 (lowest stacking order) */
+      }
+      .dummy {
+        height: 50px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Z-Index Stacking Order Example</h1>
+    <p>
+      This example demonstrates how the CSS <code>z-index</code> property
+      controls the stacking order of overlapping elements.
+    </p>
+
+    <div class="dummy"></div>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="dummy"></div>
+
+    <h2>Explanation of Boxes</h2>
+    <ul>
+      <li>
+        <strong>Box 1 (Red)</strong>: Positioned at (50px, 50px) with a z-index
+        of 1. It is behind the blue box.
+      </li>
+      <li>
+        <strong>Box 2 (Blue)</strong>: Positioned at (70px, 70px) with a z-index
+        of 2. It overlaps Box 1 and appears in front of it.
+      </li>
+      <li>
+        <strong>Box 3 (Green)</strong>: Positioned at (90px, 90px) with a
+        z-index of 0. It is behind both Box 1 and Box 2.
+      </li>
+    </ul>
+
+    <h2>Understanding Stacking Context</h2>
+    <p>
+      The z-index property only affects positioned elements. The higher the
+      z-index value, the closer the element is to the viewer, allowing it to
+      cover elements with lower z-index values.
+    </p>
+    <p>
+      In this example, even though the boxes overlap, their stacking order is
+      determined by the z-index values assigned to them. Box 2, with the highest
+      z-index, appears on top, while Box 3, with the lowest z-index, is hidden
+      behind the others.
+    </p>
+  </body>
+</html>

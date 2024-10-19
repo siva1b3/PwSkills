@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      .container {
+        position: relative; /* Establish a positioning context */
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        margin: 20px;
+      }
+
+      .relative-box {
+        position: relative; /* Moves relative to its original position */
+        top: 20px; /* Moves down 20px */
+        left: 20px; /* Moves right 20px */
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        margin: 10px;
+      }
+
+      .absolute-box {
+        position: absolute; /* Removed from document flow */
+        top: 50px; /* Positioned 50px from the top of .container */
+        left: 50px; /* Positioned 50px from the left of .container */
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+        margin: 10px;
+      }
+
+      .explanation {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="explanation">
+      <h2>Understanding Positioning in CSS</h2>
+      <p><strong>Relative Positioning:</strong></p>
+      <ul>
+        <li>
+          <strong>Definition:</strong> When an element is positioned relatively,
+          it is positioned relative to its normal position in the document flow.
+          This means it can be moved from its original location without
+          affecting the layout of other elements.
+        </li>
+        <li>
+          <strong>Use Case:</strong> Useful when you want to nudge an element
+          from its original position but still maintain its space in the layout.
+        </li>
+      </ul>
+      <p><strong>Absolute Positioning:</strong></p>
+      <ul>
+        <li>
+          <strong>Definition:</strong> An absolutely positioned element is
+          removed from the normal document flow and is positioned relative to
+          its nearest positioned ancestor (an ancestor element that has a
+          position property other than <code>static</code>). If there is no such
+          ancestor, it is positioned relative to the initial containing block
+          (usually the viewport).
+        </li>
+        <li>
+          <strong>Use Case:</strong> Useful for layering elements or creating
+          more complex layouts without affecting other elements.
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="relative-box">Relative</div>
+      <div class="absolute-box">Absolute</div>
+    </div>
+  </body>
+</html>
