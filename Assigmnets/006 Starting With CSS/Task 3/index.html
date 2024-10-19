@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled HTML Form</title>
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* Form Container */
+      .form-container {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      /* Title */
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      /* Form Styling */
+      .styled-form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .section {
+        margin-bottom: 20px;
+      }
+
+      /* Labels */
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #555;
+      }
+
+      /* Input Fields */
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #5b9bd5;
+        outline: none;
+      }
+
+      /* Custom Color Palette */
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        background-color: #e6f2ff; /* Soft blue background */
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="tel"]:focus,
+      textarea:focus {
+        background-color: #d0e7ff; /* Slightly darker blue on focus */
+      }
+
+      /* Apply opacity to the 'Message' section */
+      .message-info {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        opacity: 0.8;
+      }
+
+      /* Submit Button */
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      /* Form Section Titles */
+      section h3 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Contact Us</h2>
+      <form action="#" method="POST" class="styled-form">
+        <!-- Personal Info Section -->
+        <section class="section personal-info">
+          <h3>Personal Information</h3>
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Your Phone"
+            required
+          />
+        </section>
+
+        <!-- Message Section -->
+        <section class="section message-info">
+          <h3>Message</h3>
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Type your message here..."
+            required
+          ></textarea>
+        </section>
+
+        <!-- Submit Button -->
+        <div class="form-actions">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

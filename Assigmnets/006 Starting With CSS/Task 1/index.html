@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Application Methods</title>
+
+    <!-- Internal CSS -->
+    <style>
+      /* This is internal CSS, and it applies to all div elements inside the body. */
+      div {
+        background-color: lightblue;
+        padding: 20px;
+        margin: 10px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      /* This is an example of internal CSS for a specific class. */
+      .red-background {
+        background-color: lightcoral;
+      }
+
+      /* This is an internal CSS targeting an ID */
+      #unique-style {
+        background-color: lightgreen;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- External CSS will target this element through its class (not shown here, but included in the CSS file) -->
+    <div class="external-style">
+      This div is styled using an external stylesheet.
+    </div>
+
+    <!-- Inline CSS directly applied to the div element -->
+    <div
+      style="background-color: lightyellow; padding: 20px; text-align: center"
+    >
+      This div is styled using inline CSS.
+    </div>
+
+    <!-- Internal CSS class applied -->
+    <div class="red-background">
+      This div has a red background using internal CSS class.
+    </div>
+
+    <!-- Internal CSS ID applied -->
+    <div id="unique-style">
+      This div has a unique green background using an internal CSS ID.
+    </div>
+
+    <!-- Default internal CSS applied to this div -->
+    <div>
+      This div uses the default internal CSS styling (light blue background).
+    </div>
+  </body>
+</html>

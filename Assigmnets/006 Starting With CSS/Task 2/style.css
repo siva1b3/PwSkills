@@ -1,0 +1,37 @@
+/* Block Level Styling */
+.content {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Base Paragraph Styling */
+.content__paragraph {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Modifier: Primary Paragraph */
+.content__paragraph--primary {
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  border-left: 5px solid #2980b9;
+  padding-left: 15px;
+}
+
+/* Modifier: Secondary Paragraph */
+.content__paragraph--secondary {
+  color: #7f8c8d;
+  background-color: #bdc3c7;
+  border-left: 5px solid #16a085;
+  padding-left: 15px;
+}
+
+/* Modifier: Highlighted Paragraph */
+.content__paragraph--highlighted {
+  color: #fff;
+  background-color: #f39c12;
+  font-weight: bold;
+  padding-left: 15px;
+  border-left: 5px solid #e74c3c;
+}
