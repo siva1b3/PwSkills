@@ -1,0 +1,30 @@
+.container {
+  height: 1200px;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: aqua;
+  flex-direction: column;
+}
+
+.box {
+  height: 200px;
+  width: 100%;
+}
+
+.box1 {
+  background-color: red;
+  flex-grow: 1;
+}
+.box2 {
+  background-color: gray;
+}
+.box3 {
+  background-color: blue;
+}
+.box4 {
+  background-color: yellow;
+}
+.box5 {
+  background-color: brown;
+}
